@@ -644,3 +644,6 @@ footer .logo { margin-bottom: 25px;}
 
 .copyright a.btn:is(:hover, :focus) {color: var(--white)}
 
+/*-------------------*\
+    MEDIA QUERIES
+\*-------------------*/
