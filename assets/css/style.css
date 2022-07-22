@@ -647,3 +647,250 @@ footer .logo { margin-bottom: 25px;}
 /*-------------------*\
     MEDIA QUERIES
 \*-------------------*/
+
+/** responsive for larger than 450px */
+
+@media (min-width: 450px) {
+    /* HERO*/
+
+    .hero-form { position: relative;}
+
+    .email-field {
+        margin-bottom: 0;
+        padding-right: 155px;
+    }
+
+    .hero .btn-primary {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding-block: 12.5px;
+    }
+
+    /** ABUT */
+
+    .about-card .card-text {
+        max-width: 300px;
+        margin-inline: auto;
+    }
+}
+
+/** responsive for larger than 576px */
+
+@media (min-width: 576px) {
+    /* CUSTOM PROPERTY*/
+
+    :root {
+
+        /* Typography */
+
+        --fs-1:52px;
+    }
+
+    /** REUSED STYLE */
+
+    .container {
+        max-width: 525px;
+        margin-inline: auto;
+    }
+
+    .section-text {
+        max-width: 460px;
+        margin-inline: auto;
+        margin-bottom: 80px;
+    }
+
+
+}
+
+
+
+/** responsive for larger than 768px*/
+
+@media (min-width: 768px) {
+    /* REUSED STYLE */
+
+    .container { max-width: 720px;}
+
+    .section-text { max-width: 645px;}
+
+    /* HERO */
+
+    .hero :is(.hero-text, .form-text, .hero-form) { max-width: 520px;}
+
+    .hero-banner {
+        max-width: 600px;
+        margin-inline: auto;
+    }
+
+    /* ABOUT */
+
+    .about-list { grid-template-columns: 1fr 1fr;}
+
+    /* CONTACT */
+
+    .contact-form .wrapper-flex {
+        display: flex;
+        gap: 30px;
+    }
+
+    .wrapper-flex .input-wrapper {width: 50%;}
+
+    /* FOOTER */
+
+    .footer-link-box { grid-template-columns: repeat(3, 1fr); }
+
+
+
+}
+
+
+
+/** responsive for larger than 992px*/
+
+@media (min-width: 992px) {
+
+    /* REUSED STYLE */
+
+    .container { max-width: 950px; }
+
+    .section-text { max-width: 450px; }
+
+    /* HEADER */
+
+    .header {
+        overflow: visible;
+        padding-block: 0;
+        height: unset;
+    }
+
+    .header.active { height: unset;}
+
+    .menu-toggle-btn { display: none;}
+
+    .navbar {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 0;
+    }
+
+    .navbar-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        gap: 40px;
+        margin-inline: auto;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap:40px;
+    }
+
+    .navbar-link,
+    .header-action-link { padding-block: 25px;}
+
+    /* HERO */
+
+    .hero .container {
+        display: grid;
+        grid-template-columns: 4fr 5fr;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .hero-content { margin-bottom: 0;}
+
+    /*ABOUT */
+
+    .about .container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .about-content {
+        margin-bottom: 0;
+        width: 40%;
+    }
+
+    .about-list {
+        gap: 30px;
+        padding-bottom: 50px;
+    }
+
+    .about-list li:nth-child(odd) { transform: translateY(50px); }
+
+    /* FEATURES */
+
+    .features-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 90px;
+    }
+
+    .features-wrapper:not(:last-child) { margin-bottom: 100px; }
+
+    .features-wrapper:last-child .features-banner {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    /* BLOG */
+
+    .blog-list { grid-template-columns: repeat(3, 1fr); }
+
+    .blog .section-text { margin-bottom: 50px; }
+
+    /* CONTACT */
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 80px;
+        align-items: center;
+    }
+
+    .contact-form { margin-bottom: 0;}
+
+    /* FOOTER */
+
+    .footer-top .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .footer-brand {
+        margin-bottom: 0;
+        max-width: 300px;
+    }
+
+    .footer-list { width: 140px; }
+
+
+}
+
+
+/** responsive for larger than 1200px*/
+
+@media (min-width: 1200px) {
+
+    /* REUSED STYLE */
+
+    .hero .container { gap: 150px; }
+
+    /* FOOTER */
+
+    .footer-link-box { margin-right: 40px;}
+
+    .footer-list { width: 170px; }
+}
