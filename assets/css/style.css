@@ -491,7 +491,7 @@ FEATURES
 
 
 /*-------------------*\
-        BLOG
+       Contact Us
 \*-------------------*/
 
 .contact {
@@ -531,7 +531,7 @@ FEATURES
 
 textarea.input-field {
     margin-bottom:20px;
-    resize: vertical;
+    resize: both;
     min-height:50px;
     height: 100px;
     max-height: 200px;
