@@ -20,6 +20,13 @@ Custom Property
   --cool-gray: hsl(244, 17%, 61%);
   --sapphire: hsl(211, 100%, 35%);
   --white: hsl(0, 0%, 100%);
+  --diamond-blue: hsl(192, 89%, 48%);
+  --surf-light: hsla(194, 86%, 80%, 0.075);
+  --surf-lightsolidback: hsla(194, 86%, 80%, 0.226);
+  --deepsky-blue: hsl(195,100%,50%);
+  --deepsky-bluedark: hsla(197, 91%, 47%, 0.877);
+  --deepsky-bluedark2: hsla(199, 94%, 43%, 0.952);
+  --deepsky-bluedarker: hsl(195,100%, 27%);
   
 
     /**
@@ -124,29 +131,29 @@ Reused Style
 .btn:is(:hover, :focus) {transform: translateY(-2px)}
 
 .btn-primary {
-    background: var(--majorelle-blue);
+    background: var(--deepsky-blue);
     color:var(--white);
 }
 
 .btn-primary.btn:is(:hover, :focus){
-    --majorelle-blue: hsl(245, 67%, 55%);
-    box-shadow: 0 3px 10px hsla(245, 67%, 59%, 0.5);
+    --deepsky-bluedark: hsl(195, 100%, 40%);
+    box-shadow: 0 3px 10px hsla(208, 100%, 51%, 1);
 }
 
 .btn-outline {
-    border: 1px solid var(--majorelle-blue);
-    color: var(--majorelle-blue);
+    border: 1px solid var(--deepsky-blue);
+    color: var(--deepsky-blue);
 }
 
 .btn-outline:is(:hover, :focus) {
-    background: var(--majorelle-blue);
+    background: var(--deepsky-blue);
     color:var(--white);
-    box-shadow: 0 3px 10px hsla(245, 67%, 59%, 0.5);
+    box-shadow: 0 3px 10px hsla(208, 100%, 51%, 1);
 }
 
 .btn-secondary {
-    background: hsla(245, 67%, 59%, 0.15);
-    color: var(--majorelle-blue);
+    background: hsla(208, 100%, 51%, 1);
+    color: var(--deepsky-blue);
 
 }
 
@@ -213,7 +220,7 @@ HEADER
     padding-block: 8px;
 }
 
-:is(.navbar-link, .header-action-link):is(:hover, :focus) {color: var(--majorelle-blue)}
+:is(.navbar-link, .header-action-link):is(:hover, :focus) {color: var(--deepsky-blue)}
 
 /*-------------------*\
 HERO
@@ -221,7 +228,7 @@ HERO
 
 .hero{
     padding: 125px 0 var(--section-padding);
-    background: var(--ghost-white-1);
+    background: var(--surf-light);
 }
 
 .hero-content {margin-bottom: 80px;}
@@ -257,7 +264,7 @@ HERO
     margin-bottom: 20px;
 }
 
-.email-field:focus {outline-color: var(--majorelle-blue);}
+.email-field:focus {outline-color: var(--deepsky-blue);}
 
 .hero .btn-primary {margin-inline: auto;}
 
@@ -276,10 +283,10 @@ HERO
 .about-icon {
     width: 60px;
     height: 60px;
-    background: var(--lavender-web);
+    background: var(--surf-lightsolidback);
     display: grid;
     place-items: center;
-    color:var(--majorelle-blue);
+    color:var(--deepsky-blue);
     font-size: 40px;
     border-radius: 4px;
     margin-bottom: 20px;
@@ -302,24 +309,24 @@ HERO
 .about-card{
     padding:20px;
     text-align: center;
-    box-shadow: 0 5px 18px hsla(245, 67%, 59%, 0.4);
+    box-shadow: 0 5px 18px hsla(208, 100%, 51%, 0.2);
     border-radius: 4px;
     transition: var(--transition);
 }
 
 .about-card:hover {
-    background: var(--majorelle-blue);
+    background: var(--deepsky-blue);
     transform: translateY(-5px);
-    box-shadow: 0 5px 18px hsla(245, 67%, 59%, 0.4);
+    box-shadow: 0 5px 18px hsla(208, 100%, 51%, 0.2);
 }
 
 .about-card .card-icon {
     width: 60px;
     height: 60px;
-    background-color: var(--lavender-web);
+    background-color: var(--surf-lightsolidback);
     display: grid;
     place-items: center;
-    color: var(--majorelle-blue);
+    color: var(--deepsky-blue);
     font-size: 28px;
     border-radius: 50%;
     margin-inline: auto;
@@ -328,9 +335,9 @@ HERO
 }
 
 .about-card:hover .card-icon{
-    background: hsla(0, 0%, 100%, 0.15);
+    background: 0 5px 18px hsla(208, 100%, 51%, 0.2);;
     color:var(--white);
-    box-shadow: 0 0 0 8px hsla(0, 0%, 100%, 0.05);
+    box-shadow: 0 0 0 8px hsla(208, 100%, 51%, 0.2);
 }
 
 .about-card .card-title{
@@ -357,7 +364,7 @@ FEATURES
 
 .features {
     padding-block: var(--section-padding);
-    background: var(--ghost-white-1);
+    background: var(--surf-light);
 }
 
 .features .section-title {margin-bottom: 15px;}
@@ -518,13 +525,13 @@ FEATURES
     color:var(--independence);
     font-size: var(--fs-7);
     padding: 10px 15px;
-    border: 1px solid hsla(244, 17%, 67%, 0.3);
+    border: 1px solid hsla(208, 100%, 51%, 0.2);
     border-radius: 4px;
 }
 
 .contact .input-field:focus {
     outline: none;
-    background:var(--ghost-white-2);
+    background:var(--ghost-white-1);
 }
 
 .contact .input-field::placeholder {color:var(--cool-gray)}
@@ -573,7 +580,7 @@ textarea.input-field {
 \*-------------------*/
 
 footer {
-    background: var(--raisin-black-1);
+    background: var(--deepsky-bluedark);
     color:var(--white-opacity);
     font-weight: var(--fw-500);
 }
@@ -631,9 +638,10 @@ footer .logo { margin-bottom: 25px;}
 }
 
 .footer-bottom {
-    background: var(--raisin-black-2);
+    background: var(--deepsky-bluedark2);
     padding-block: 20px;
     text-align: center;
+    color: white
 }
 
 .copyright a {
